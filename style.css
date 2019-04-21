@@ -19,9 +19,16 @@ div.content {
     padding-bottom: 0.2em;
     padding-top: 0.2em;
 }
-div.content h1, h2, p {
+div.content img:first-child {
+    padding-top: 1em;
+}
+div.content h1, div.content h2, div.content p, div.content img {
     margin-left: 2%;
     margin-right: 2%;
+}
+div.content img {
+    width: 96%;
+    height: auto;
 }
 .nav, a.pagename.current img {
     font-size: 26px;
@@ -30,4 +37,25 @@ div.content h1, h2, p {
 .nav a {
     color: white;
 }
+div.content p {
+    text-align: justify;
+}
+div.content h1 {
+    text-decoration: underline;
+}
+div.content div.row {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    height: auto;
+}
+div.col img:first-child {
+    width: 100%;
+    height: auto;
+    padding-top: initial;
+    margin: 0 0 0 0;
+}
+div.col p {
+    margin-top: 0;
+} 
 

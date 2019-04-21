@@ -2,11 +2,138 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>UoSTEM@BU</title>
-        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-        <link href="https://cdn.jsdelivr.net/gh/owenversteeg/min@1.5/entireframework.min.css" rel="stylesheet">
+        <title>UoSTEM@BU: Team</title>
+        <link href="./entireframework.min.css" rel="stylesheet">
+        <link href="./style.css" rel="stylesheet" type="text/css" media="all">
     </head>
+    <style>
+        h2.ename, h2.job {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2.job {
+            font-style: italic;
+        }
+        input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+        }
+        label>* {
+            display: block;
+        }
+        /* Default State */
+        div.hidden {
+            display: none;
+        }
+        div.hidden p {
+            margin-top: 1em;
+        }
+        /* Toggled State */
+        input[type=checkbox]:checked ~ div.hidden {
+            display: block;
+        }
+        div.headshot {
+            max-height: 450px;
+            overflow: hidden;
+        }
+    </style>
     <body>
-        Hello world!
+        <video class="fullscreen" autoplay muted loop>
+          <source src="./images/colors.mp4" type="video/mp4">
+        </video>
+        <nav class="nav" tabindex="-1" onclick="this.focus()">
+            <div class="container">
+                <!----><a class="pagename current" href="#"><img src="./images/oSTEMBUlogo_white.png"></a><!---->
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./events.html">Events</a>
+                <a href="./news.html">News</a>
+                <a href="./team.html">Team</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </nav>
+    <body>
+        <div class="row">
+            <div class="col c4">
+                <div class="content">
+                    <label for="toggle-1">
+                        <div class="headshot">
+                            <img class="headshot" src="./images/lj.jpg">
+                        </div>
+                        <h2 class="ename">Laura Joy Erb</h2>
+                        <h2 class="job">President</h2>
+                    </label>
+                    <input type="checkbox" id="toggle-1">
+                    <div class="hidden">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col c4">
+                <div class="content">
+                    <label for="toggle-2">
+                        <div class="headshot">
+                            <img class="headshot" src="./images/genny.jpg">
+                        </div>
+                        <h2 class="ename">Genny Norman</h2>
+                        <h2 class="job">Vice President</h2>
+                    </label>
+                    <input type="checkbox" id="toggle-2">
+                    <div class="hidden">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col c4">
+                <div class="content">
+                    <label for="toggle-3">
+                        <div class="headshot">
+                            <img class="headshot" src="./images/catherine.jpg">
+                        </div>
+                        <h2 class="ename">Catherine Della Santina</h2>
+                        <h2 class="job">Secretary</h2>
+                    </label>
+                    <input type="checkbox" id="toggle-3">
+                    <div class="hidden">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col c2"><div style="background: transparent; padding-top:0.2em;"></div></div> <!-- this is a spacer -->
+            <div class="col c4">
+                <div class="content">
+                    <label for="toggle-4">
+                        <div class="headshot">
+                            <img class="headshot" src="./images/lj.jpg">
+                        </div>
+                        <h2 class="ename">Erin Dorsey</h2>
+                        <h2 class="job">Event Handler</h2>
+                    </label>
+                    <input type="checkbox" id="toggle-4">
+                    <div class="hidden">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col c4">
+                <div class="content">
+                    <label for="toggle-5">
+                        <div class="headshot">
+                            <img class="headshot" src="./images/cass.jpg">  
+                        </div>
+                        <h2 class="ename">Cassandra-Lynn Leach</h2>
+                        <h2 class="job">Event Handler</h2>
+                    </label>
+                    <input type="checkbox" id="toggle-5">
+                    <div class="hidden">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col c2"><div style="background: transparent; padding-top:0.2em;"></div></div> <!-- this is a spacer -->
+        </div>
     </body>
 </html>
