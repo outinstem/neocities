@@ -17,7 +17,8 @@
         }
         input[type=checkbox] {
             position: absolute;
-            opacity: 0;
+            top: -9999px;
+            left: -9999px;
         }
         label>* {
             display: block;
@@ -26,22 +27,19 @@
         div.hidden {
             display: none;
         }
-        div.hidden p {
-            margin-top: 1em;
-        }
         /* Toggled State */
         input[type=checkbox]:checked ~ div.hidden {
             display: block;
         }
         div.headshot {
-            max-height: 450px;
+            max-height: 400px;
             overflow: hidden;
         }
     </style>
     <body>
-        <video class="fullscreen" autoplay muted loop>
+    <!--<video class="fullscreen" autoplay muted loop>
           <source src="./images/colors.mp4" type="video/mp4">
-        </video>
+        </video>-->
         <nav class="nav" tabindex="-1" onclick="this.focus()">
             <div class="container">
                 <!----><a class="pagename current" href="#"><img src="./images/oSTEMBUlogo_white.png"></a><!---->
@@ -53,7 +51,7 @@
                 <a href="./contact.html">Contact</a>
             </div>
         </nav>
-    <body>
+        <img class="bg" src="./images/prideflagbg.jpg">
         <div class="row">
             <div class="col c4">
                 <div class="content">

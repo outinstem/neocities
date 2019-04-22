@@ -37,25 +37,24 @@ div.content img {
 .nav a {
     color: white;
 }
+.nav a:hover {
+    color: lightgray;
+}
 div.content p {
     text-align: justify;
 }
 div.content h1 {
     text-decoration: underline;
 }
-div.content div.row {
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 96%;
-    height: auto;
+body {
+    background-color: #e7ecf1
 }
-div.col img:first-child {
+.bg {
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    padding-top: initial;
-    margin: 0 0 0 0;
+    height: 100%;
+    position: absolute;
+    -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    z-index: -9999;
 }
-div.col p {
-    margin-top: 0;
-} 
-
