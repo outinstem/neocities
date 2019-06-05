@@ -5,40 +5,49 @@
         <title>UoSTEM@BU: Team</title>
         <link href="./entireframework.min.css" rel="stylesheet">
         <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#b91d47">
+        <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <style>
+            h2.ename, h2.job {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            h2.job {
+                font-style: italic;
+            }
+            input[type=checkbox] {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            label>* {
+                display: block;
+            }
+            /* Default State */
+            div.hidden {
+                display: none;
+            }
+            /* Toggled State */
+            input[type=checkbox]:checked ~ div.hidden {
+                display: block;
+            }
+            div.headshot {
+                max-height: 400px;
+                overflow: hidden;
+            }
+            img.headshot {
+                cursor: pointer;
+            }
+        </style>
     </head>
-    <style>
-        h2.ename, h2.job {
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h2.job {
-            font-style: italic;
-        }
-        input[type=checkbox] {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-        }
-        label>* {
-            display: block;
-        }
-        /* Default State */
-        div.hidden {
-            display: none;
-        }
-        /* Toggled State */
-        input[type=checkbox]:checked ~ div.hidden {
-            display: block;
-        }
-        div.headshot {
-            max-height: 400px;
-            overflow: hidden;
-        }
-        img.headshot {
-            cursor: pointer;
-        }
-    </style>
     <body>
     <!--<video class="fullscreen" autoplay muted loop>
           <source src="./images/colors.mp4" type="video/mp4">
@@ -50,17 +59,17 @@
                 <a href="./about.html">About</a>
                 <a href="./events.html">Events</a>
                 <a href="./news.html">News</a>
-                <a href="./team.html">Team</a>
+                <a style="color: #a660ff;" href="./team.html">Team</a>
                 <a href="./contact.html">Contact</a>
             </div>
         </nav>
-        <img class="bg" src="./images/prideflagbg.jpg">
+        <img class="bg" src="./images/eboard/prideflagbg.jpg">
         <div class="row">
             <div class="col c4">
                 <div class="content">
                     <label for="toggle-1">
                         <div class="headshot">
-                            <img class="headshot" src="./images/lj.jpg">
+                            <img class="headshot" src="./images/eboard/lj.jpg">
                         </div>
                         <h2 class="ename">Laura Joy Erb</h2>
                         <h2 class="job">President</h2>
@@ -75,7 +84,7 @@
                 <div class="content">
                     <label for="toggle-2">
                         <div class="headshot">
-                            <img class="headshot" src="./images/genny.jpg">
+                            <img class="headshot" src="./images/eboard/genny.jpg">
                         </div>
                         <h2 class="ename">Genny Norman</h2>
                         <h2 class="job">Vice President</h2>
@@ -88,14 +97,14 @@
             </div>
             <div class="col c4">
                 <div class="content">
-                    <label for="toggle-3">
+                    <label for="toggle-4">
                         <div class="headshot">
-                            <img class="headshot" src="./images/catherine.jpg">
+                            <img class="headshot" src="./images/eboard/erin.jpg">
                         </div>
-                        <h2 class="ename">Catherine Della Santina</h2>
-                        <h2 class="job">Secretary</h2>
+                        <h2 class="ename">Erin Dorsey</h2>
+                        <h2 class="job">Treasurer</h2>
                     </label>
-                    <input type="checkbox" id="toggle-3">
+                    <input type="checkbox" id="toggle-4">
                     <div class="hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
                     </div>
@@ -106,14 +115,14 @@
             <div class="col c2"><div style="background: transparent; padding-top:0.2em;"></div></div> <!-- this is a spacer -->
             <div class="col c4">
                 <div class="content">
-                    <label for="toggle-4">
+                    <label for="toggle-3">
                         <div class="headshot">
-                            <img class="headshot" src="./images/lj.jpg">
+                            <img class="headshot" src="./images/eboard/catherine.jpg">
                         </div>
-                        <h2 class="ename">Erin Dorsey</h2>
-                        <h2 class="job">Event Handler</h2>
+                        <h2 class="ename">Catherine Della Santina</h2>
+                        <h2 class="job">Administrative Secretary</h2>
                     </label>
-                    <input type="checkbox" id="toggle-4">
+                    <input type="checkbox" id="toggle-3">
                     <div class="hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus scelerisque elit id consequat. Vestibulum mattis mi nec sem vehicula, eget ultricies purus rhoncus. Proin eu risus at augue venenatis sodales. Integer in velit ut sem scelerisque sodales. Donec a enim mi. Nullam molestie urna non purus auctor dapibus. In gravida sit amet risus at dictum. Integer aliquam faucibus ultrices. Nullam egestas condimentum egestas. Vestibulum ut ornare lorem. Nulla facilisi. Integer erat est, eleifend a blandit pharetra, pharetra sed nulla. Curabitur pharetra rhoncus dignissim. Maecenas ut tortor vitae nisl tincidunt lacinia sed ac elit.</p>
                     </div>
@@ -123,10 +132,10 @@
                 <div class="content">
                     <label for="toggle-5">
                         <div class="headshot">
-                            <img class="headshot" src="./images/cass.jpg">  
+                            <img class="headshot" src="./images/eboard/cass.jpg">  
                         </div>
                         <h2 class="ename">Cassandra-Lynn Leach</h2>
-                        <h2 class="job">Event Handler</h2>
+                        <h2 class="job">Corresponding Secretary</h2>
                     </label>
                     <input type="checkbox" id="toggle-5">
                     <div class="hidden">
