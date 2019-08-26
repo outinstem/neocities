@@ -3,7 +3,7 @@
 body, textarea, input, select {
   background: 0;
   border-radius: 0;
-  font: 16px sans-serif;
+/*  font: 16px sans-serif; */ /* see style.css */
   margin: 0;
 }
 
