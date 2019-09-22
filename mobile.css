@@ -1,0 +1,40 @@
+/* mobile.css style for the site outinstem.neocities.org, see github.com/outinstem */
+.bg { display: none }
+
+div.content {
+    box-shadow: unset;
+    transition: unset;
+    border-radius: unset;
+    margin: unset;
+    padding-bottom: unset;
+    padding-top: unset;
+
+    width: 100%;
+}
+
+div.content h1, div.content h2 { margin: unset; }
+div.content h1 { font-size: 2em; padding-top: 0.2em; }
+div.content h2 { font-size: 1em; padding-top: 0.2em; }
+
+div.content hr {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin: 0px;
+    margin-top: 0.5em;
+}
+
+p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#mobile-only { display: block; }
+
+div.content h1, div.content h2, div.content h3 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
